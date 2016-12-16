@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        app:theme="@style/BaltMed.ToolBarStyle"/>
+
+    <ScrollView
+        android:id="@+id/fmt_check_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/passive">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_xlarge">
+
+            <TextView
+                android:id="@+id/fmt_check_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_title_item"
+                android:clickable="false"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:text="@string/label_making_appointment"
+                android:textAllCaps="true"
+                android:textColor="@color/text_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_date_label"
+                    style="@style/BaltMed.TextView.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_desired_date_of_appointment"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_date"
+                    style="@style/BaltMed.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_xlarge"
+                    android:hint="@string/hint_date"
+                    android:nextFocusDown="@+id/fmt_check_tv_time"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_time_label"
+                    style="@style/BaltMed.TextView.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_desired_time_of_appointment"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_time"
+                    style="@style/BaltMed.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_xlarge"
+                    android:hint="@string/hint_time"
+                    android:nextFocusDown="@+id/fmt_check_tv_lastname"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_lastname_label"
+                    style="@style/BaltMed.TextView.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_lastname"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_lastname"
+                    style="@style/BaltMed.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_xlarge"
+                    android:hint="@string/empty"
+                    android:nextFocusDown="@+id/fmt_check_tv_name"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_name_label"
+                    style="@style/BaltMed.TextView.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_name"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_name"
+                    style="@style/BaltMed.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_xlarge"
+                    android:hint="@string/empty"
+                    android:nextFocusDown="@+id/fmt_check_tv_middlename"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_middlename_label"
+                    style="@style/BaltMed.TextView.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_middlename"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_middlename"
+                    style="@style/BaltMed.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_xlarge"
+                    android:hint="@string/empty"
+                    android:nextFocusDown="@+id/fmt_check_tv_email"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_email_label"
+                    style="@style/BaltMed.TextView.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_email"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_email"
+                    style="@style/BaltMed.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_xlarge"
+                    android:hint="@string/hint_email"
+                    android:nextFocusDown="@+id/fmt_check_tv_phone"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_phone_label"
+                    style="@style/BaltMed.TextView.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_phone"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_phone"
+                    style="@style/BaltMed.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_xlarge"
+                    android:hint="@string/hint_phone"
+                    android:nextFocusDown="@+id/fmt_check_tv_notes"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_notes_label"
+                    style="@style/BaltMed.TextView.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_notes"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_tv_notes"
+                    style="@style/BaltMed.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_xlarge"
+                    android:hint="@string/empty"
+                    android:nextFocusDown="@+id/fmt_check_btn_send"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding_xxlarge"
+                android:text="@string/label_we_contact_to_you_for_approve"
+                android:textColor="@color/colorAccent"
+                />
+
+            <Button
+                android:id="@+id/fmt_check_btn_send"
+                style="@style/BaltMed.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_send"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

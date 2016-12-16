@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contact_phones">
+        <item>@string/contact_phone1</item>
+        <item>@string/contact_phone2</item>
+    </string-array>
+
+    <string-array name="contact_places">
+        <item>@string/contact_place1</item>
+        <item>@string/contact_place2</item>
+    </string-array>
+
+    <string-array name="contact_addresses">
+        <item>@string/contact_address1</item>
+        <item>@string/contact_address2</item>
+    </string-array>
+
+    <string-array name="contact_specs">
+        <item>@string/contact_spec1</item>
+        <item>@string/contact_spec2</item>
+    </string-array>
+
+    <string-array name="contact_work_times">
+        <item>@string/contact_work_time1</item>
+        <item>@string/contact_work_time2</item>
+    </string-array>
+
+    <string-array name="contact_analyzes_times">
+        <item>@string/contact_analyzes_time1</item>
+        <item>@string/contact_analyzes_time2</item>
+    </string-array>
+
+    <string-array name="contact_appointment_times">
+        <item>@string/contact_appointment_time1</item>
+        <item>@string/contact_appointment_time2</item>
+    </string-array>
+</resources>

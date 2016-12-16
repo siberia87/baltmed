@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/li_news_root"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/bg_selector"
+              android:padding="@dimen/padding_li">
+
+    <TextView
+        android:id="@+id/li_news_tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:paddingBottom="@dimen/padding_middle"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_middle"
+        android:textAppearance="@style/BaltMed.TextAppearance.Normal"
+        tools:text="26 апреля 2016"/>
+
+    <TextView
+        android:id="@+id/li_news_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+
+        android:textAllCaps="true"
+
+        android:textColor="@color/colorAccent"
+        tools:text="Вакцинация от гриппа"/>
+
+    <TextView
+        android:id="@+id/li_news_tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:textAppearance="@style/BaltMed.TextAppearance.Normal"
+        tools:text="Actually, you can set a default style for TextViews (and most other built-in widgets) ... If you take a look in themes.xml in the Android source, you will see a bunch of attributes"/>
+
+
+</LinearLayout>

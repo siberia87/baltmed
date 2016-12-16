@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        app:theme="@style/BaltMed.ToolBarStyle"/>
+
+    <ScrollView
+        android:id="@+id/fmt_contact_detail_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/fmt_contact_detail_v_address"
+                layout="@layout/v_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/fmt_contact_detail_mv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true"
+                    android:minHeight="200dp"/>
+
+                <View
+                    android:id="@+id/fmt_contact_detail_v_touchable_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/fmt_contact_detail_tv_spec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fmt_contact_detail_mv_address"
+
+                    android:background="@color/colorAccent"
+                    android:gravity="left"
+                    android:minHeight="80dp"
+                    android:paddingBottom="@dimen/padding_xlarge"
+                    android:paddingLeft="@dimen/padding_xlarge"
+                    android:paddingRight="@dimen/width_panel_get_route"
+                    android:paddingTop="@dimen/padding_xlarge"
+                    android:textAppearance="@style/BaltMed.TextAppearance.Action"
+                    android:lineSpacingExtra="@dimen/line_spacing_action"
+                    android:textColor="@color/white"
+                    tools:text="@string/contact_spec1"/>
+
+                <TextView
+                    android:id="@+id/fmt_contact_detail_tv_route"
+                    android:layout_width="@dimen/width_panel_get_route"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/fmt_contact_detail_mv_address"
+                    android:layout_marginTop="@dimen/size_semi_fab_button"
+                    android:drawableTop="@drawable/bg_btn_route"
+                    android:gravity="center_horizontal"
+                    android:text="@string/label_make_route"
+                    android:textAppearance="@style/BaltMed.TextAppearance.Action"
+                    android:textColor="@color/white"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/fmt_contact_detail_l_times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/padding_xxlarge">
+
+                <ImageView
+                    android:id="@+id/fmt_contact_detail_iv_work_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_time1"/>
+
+                <TextView
+                    android:id="@+id/fmt_contact_detail_tv_work_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/fmt_contact_detail_iv_work_time"
+                    android:layout_marginLeft="@dimen/padding_xxlarge"
+                    android:layout_toRightOf="@+id/fmt_contact_detail_iv_work_time"
+                    android:text="@string/label_time_of_work"
+                    android:textAppearance="@style/BaltMed.TextAppearance.Action"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/fmt_contact_detail_tv_work_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fmt_contact_detail_tv_work_time_label"
+                    android:layout_marginLeft="@dimen/padding_xxlarge"
+                    android:layout_toRightOf="@+id/fmt_contact_detail_iv_work_time"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:textAppearance="@style/BaltMed.TextAppearance.Action"
+                    tools:text="@string/contact_work_time1"/>
+
+                <ImageView
+                    android:id="@+id/fmt_contact_detail_iv_appointment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fmt_contact_detail_tv_work_time"
+                    android:layout_marginTop="@dimen/padding_xxlarge"
+                    android:src="@drawable/icon_time3"/>
+
+                <TextView
+                    android:id="@+id/fmt_contact_detail_tv_appointment_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/fmt_contact_detail_iv_appointment_time"
+                    android:layout_marginLeft="@dimen/padding_xxlarge"
+                    android:layout_toRightOf="@+id/fmt_contact_detail_iv_appointment_time"
+                    android:text="@string/label_time_of_appointment"
+                    android:textAppearance="@style/BaltMed.TextAppearance.Action"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/fmt_contact_detail_tv_appointment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fmt_contact_detail_tv_appointment_time_label"
+                    android:layout_marginLeft="@dimen/padding_xxlarge"
+                    android:layout_toRightOf="@+id/fmt_contact_detail_iv_appointment_time"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:textAppearance="@style/BaltMed.TextAppearance.Action"
+                    tools:text="@string/contact_appointment_time1"/>
+
+                <ImageView
+                    android:id="@+id/fmt_contact_detail_iv_analyzes_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fmt_contact_detail_tv_appointment_time"
+                    android:layout_marginTop="@dimen/padding_xxlarge"
+                    android:src="@drawable/icon_time3"/>
+
+                <TextView
+                    android:id="@+id/fmt_contact_detail_tv_analyzes_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/fmt_contact_detail_iv_analyzes_time"
+                    android:layout_marginLeft="@dimen/padding_xxlarge"
+                    android:layout_toRightOf="@+id/fmt_contact_detail_iv_analyzes_time"
+                    android:text="@string/label_time_of_analyzes"
+                    android:textAppearance="@style/BaltMed.TextAppearance.Action"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/fmt_contact_detail_tv_analyzes_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fmt_contact_detail_tv_analyzes_time_label"
+                    android:layout_marginLeft="@dimen/padding_xxlarge"
+                    android:layout_toRightOf="@+id/fmt_contact_detail_iv_analyzes_time"
+                    android:drawablePadding="@dimen/padding_large"
+                    android:textAppearance="@style/BaltMed.TextAppearance.Action"
+                    tools:text="@string/contact_analyzes_time1"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

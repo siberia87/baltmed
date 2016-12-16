@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        app:theme="@style/BaltMed.ToolBarStyle"/>
+
+    <ScrollView
+        android:id="@+id/fmt_contacts_root"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/passive">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_xlarge">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_middle"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/fmt_contacts_tv_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_phone"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_large"
+                        android:text="@string/label_phone"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_middle"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/fmt_contacts_tv_site"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_site"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_large"
+                        android:text="@string/label_site"/>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fmt_contacts_cv_address1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_middle"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false">
+
+                    <ImageView
+                        android:id="@+id/fmt_contacts_iv_pin1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/padding_large"
+                        android:clickable="false"
+                        android:src="@drawable/pin_blue"/>
+
+                    <TextView
+                        android:id="@+id/fmt_contacts_tv_address1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/fmt_contacts_iv_arrow1"
+                        android:layout_toRightOf="@+id/fmt_contacts_iv_pin1"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingBottom="@dimen/padding_small"
+                        android:paddingTop="@dimen/padding_large"
+                        android:text="@string/contact_address1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fmt_contacts_tv_address1"
+                        android:layout_toLeftOf="@+id/fmt_contacts_iv_arrow1"
+                        android:layout_toRightOf="@+id/fmt_contacts_iv_pin1"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingBottom="@dimen/padding_large"
+                        android:paddingTop="@dimen/padding_small"
+                        android:text="@string/contact_place1"
+                        android:textColor="@color/text_gray"
+                        android:textSize="11sp"/>
+
+                    <ImageView
+                        android:id="@+id/fmt_contacts_iv_arrow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/padding_large"
+                        android:clickable="false"
+                        android:src="@drawable/contact_arrow_right_blue"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fmt_contacts_cv_address2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_middle"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false">
+
+                    <ImageView
+                        android:id="@+id/fmt_contacts_iv_pin2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/padding_large"
+                        android:clickable="false"
+                        android:src="@drawable/pin_blue"/>
+
+                    <TextView
+                        android:id="@+id/fmt_contacts_tv_address2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/fmt_contacts_iv_arrow2"
+                        android:layout_toRightOf="@+id/fmt_contacts_iv_pin2"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingBottom="@dimen/padding_small"
+                        android:paddingTop="@dimen/padding_large"
+                        android:text="@string/contact_address2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fmt_contacts_tv_address2"
+                        android:layout_toLeftOf="@+id/fmt_contacts_iv_arrow2"
+                        android:layout_toRightOf="@+id/fmt_contacts_iv_pin2"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingBottom="@dimen/padding_large"
+                        android:paddingTop="@dimen/padding_small"
+                        android:text="@string/contact_place1"
+                        android:textColor="@color/text_gray"
+                        android:textSize="11sp"/>
+
+                    <ImageView
+                        android:id="@+id/fmt_contacts_iv_arrow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/padding_large"
+                        android:clickable="false"
+                        android:src="@drawable/contact_arrow_right_blue"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

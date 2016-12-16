@@ -1,0 +1,47 @@
+apply plugin: 'com.github.ben-manes.versions'
+
+buildscript {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://jitpack.io' }
+    }
+
+    def androidToolsVersion = "2.2.1"
+    def aptVersion = "1.8"
+    def gradleRetrolambdaVersion = "3.3.0"
+    def fabricVersion = "1.21.7"
+    def gradleVersionsVersion = '0.13.0'
+    def dexcountVersion = "0.6.1"
+
+    dependencies {
+        classpath "com.github.ben-manes:gradle-versions-plugin:$gradleVersionsVersion"
+        classpath "com.android.tools.build:gradle:$androidToolsVersion"
+        classpath "com.neenbedankt.gradle.plugins:android-apt:$aptVersion"
+        classpath 'com.github.JakeWharton:sdk-manager-plugin:0ce4cdf08009d79223850a59959d9d6e774d0f77'
+        classpath "me.tatarka:gradle-retrolambda:$gradleRetrolambdaVersion"
+        classpath "io.fabric.tools:gradle:$fabricVersion"
+        classpath "com.getkeepsafe.dexcount:dexcount-gradle-plugin:$dexcountVersion"
+    }
+}
+
+allprojects {
+
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "http://dl.bintray.com/populov/maven" }
+        maven { url "http://dl.bintray.com/tbruyelle/tbruyelle" }
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "repo" }
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.1'
+}

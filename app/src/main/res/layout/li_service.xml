@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/li_service_root"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_selector"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/li_service_iv_poster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/passive"
+        android:clickable="false"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/li_service_tv_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        android:textAllCaps="true"
+        android:textAppearance="@style/BaltMed.TextAppearance.Title"
+        android:textColor="@color/colorAccent"
+        tools:text="Семейная медицина"/>
+
+</LinearLayout>

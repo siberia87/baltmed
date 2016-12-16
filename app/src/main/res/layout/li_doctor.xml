@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/li_doctor_root"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_selector"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/li_doctor_iv_avatar"
+        android:layout_width="@dimen/size_avatar"
+        android:layout_height="@dimen/size_avatar"
+        android:layout_margin="@dimen/padding_li"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_large">
+
+        <TextView
+            android:id="@+id/li_doctor_tv_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+
+            android:textAllCaps="true"
+            android:textAppearance="@style/BaltMed.TextAppearance.Large"
+            tools:text="Новиков"/>
+
+        <TextView
+            android:id="@+id/li_doctor_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_middle"
+            android:clickable="false"
+            android:textAppearance="@style/BaltMed.TextAppearance.Large"
+            tools:text="Алексей Яковлиевич"/>
+
+        <TextView
+            android:id="@+id/li_doctor_tv_first_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textAppearance="@style/BaltMed.TextAppearance.Normal"
+            android:textColor="@color/colorAccent"
+            tools:text="Семейный врач"/>
+
+        <TextView
+            android:id="@+id/li_doctor_tv_second_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textAppearance="@style/BaltMed.TextAppearance.Normal"
+            android:textColor="@color/colorAccent"
+            tools:text="Гастроэнтерогол"/>
+
+        <TextView
+            android:id="@+id/li_doctor_tv_third_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textAppearance="@style/BaltMed.TextAppearance.Normal"
+            android:textColor="@color/colorAccent"
+            tools:text="УЗИ специалист"/>
+
+    </LinearLayout>
+
+</LinearLayout>

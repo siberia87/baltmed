@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_main" type="id" />
+    <item name="menu_services" type="id" />
+    <item name="menu_specialists" type="id" />
+    <item name="menu_gallery" type="id" />
+    <item name="menu_prices" type="id" />
+    <item name="menu_news" type="id" />
+    <item name="menu_actions" type="id" />
+    <item name="menu_contacts" type="id" />
+    <item name="menu_notifications" type="id" />
+    <item name="menu_settings" type="id" />
+    <item name="loader_load_all_news" type="id" />
+    <item name="loader_load_main_news" type="id" />
+    <item name="loader_load_doctors" type="id" />
+    <item name="loader_load_gallery" type="id" />
+    <item name="loader_load_actions" type="id" />
+    <item name="loader_load_services" type="id"/>
+    <item name="loader_load_services_prices" type="id"/>
+    <item name="loader_load_prices" type="id"/>
+    <item name="loader_load_notifications" type="id" />
+    <item name="loader_send_appointment" type="id" />
+    <item name="loader_order_call" type="id"/>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        app:theme="@style/BaltMed.ToolBarStyle"/>
+
+    <ScrollView
+        android:id="@+id/fmt_order_call_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/passive">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_xlarge">
+
+            <TextView
+                style="@style/BaltMed.TextView.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_contact_person"
+                />
+
+            <EditText
+                android:id="@+id/fmt_order_call_et_fio"
+                style="@style/BaltMed.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_xlarge"
+                android:nextFocusDown="@+id/fmt_order_call_et_phone"
+                />
+
+            <TextView
+                style="@style/BaltMed.TextView.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_phone"
+                />
+
+            <EditText
+                android:id="@+id/fmt_order_call_et_phone"
+                style="@style/BaltMed.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_xlarge"
+                />
+
+            <Button
+                android:id="@+id/fmt_order_call_btn_send"
+                style="@style/BaltMed.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_send"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

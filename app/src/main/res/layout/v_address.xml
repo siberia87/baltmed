@@ -1,0 +1,53 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="false"
+    android:padding="@dimen/padding_middle">
+
+    <ImageView
+        android:id="@+id/v_address_iv_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/padding_large"
+        android:clickable="false"
+        android:src="@drawable/pin_blue"/>
+
+    <TextView
+        android:id="@+id/v_address_tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/v_address_iv_pin"
+        android:clickable="false"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_large"
+        android:text="@string/contact_address1"/>
+
+    <TextView
+        android:id="@+id/v_address_tv_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_address_tv_address"
+        android:layout_toRightOf="@+id/v_address_iv_pin"
+        android:clickable="false"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_small"
+        android:text="@string/contact_place1"
+        android:textColor="@color/text_gray"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/v_address_tv_phone_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_address_tv_place"
+        android:layout_toRightOf="@+id/v_address_iv_pin"
+        android:textAppearance="@style/BaltMed.TextAppearance.Action"
+        tools:text="337 23 03, 337 23 04"/>
+
+</RelativeLayout>

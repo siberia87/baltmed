@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/fmt_map_root"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        app:theme="@style/BaltMed.ToolBarStyle"/>
+
+
+    <fragment
+        android:id="@+id/fmt_map_m"
+        android:layout_below="@+id/toolbar"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fmt_map_v_address"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/fmt_map_btn_plus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/padding_middle"
+            android:background="@drawable/btn_plus"/>
+
+        <Button
+            android:id="@+id/fmt_map_btn_minus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/fmt_map_btn_plus"
+            android:layout_margin="@dimen/padding_middle"
+            android:background="@drawable/btn_minus"/>
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/fmt_map_v_address"
+        layout="@layout/v_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">БалтМед</string>
+
+    <string name="api_key_google_maps" templateMergeStrategy="preserve" translatable="false">AIzaSyBColFsSvaKj_btVwG7jnHYUjExzjJBypA</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="ttl_services">Услуги</string>
+    <string name="ttl_specialists">Специалисты</string>
+    <string name="ttl_main">Главная</string>
+    <string name="ttl_gallery">Галерея</string>
+    <string name="ttl_prices">Цены</string>
+    <string name="ttl_news">Новости</string>
+    <string name="ttl_actions">Акции</string>
+    <string name="ttl_contacts">Контакты</string>
+    <string name="ttl_notifications">Уведомления</string>
+    <string name="ttl_settings">Настройки</string>
+    <string name="label_loading">Загрузка</string>
+    <string name="error_data_loading_fail">Произошла ошибка загрузки данных</string>
+    <string name="label_retry">Повторить</string>
+    <string name="ttl_make_appointment">Записаться\nна приём</string>
+    <string name="label_news_of_clinic">Новости клиники</string>
+    <string name="label_all_news">Все новости</string>
+    <string name="label_full_name">На Васильевском Острове</string>
+    <string name="label_search">Поиск</string>
+    <string name="bullet">&#8226;</string>
+    <string name="label_services_price">%1$s. Стоимость услуг</string>
+    <string name="label_service">Услуга</string>
+    <string name="label_price">Стоимость</string>
+    <string name="fish">Товарищи! начало повседневной работы по формированию позиции позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации направлений прогрессивного развития. Разнообразный и богатый опыт начало повседневной работы по формированию позиции в значительной степени обуславливает создание новых предложений. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа направлений прогрессивного развития.  Товарищи! сложившаяся структура организации требуют определения и уточнения дальнейших направлений развития. Задача организации, в особенности же реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации новых предложений. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации модели развития. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения направлений прогрессивного развития.  Не следует, однако забывать, что рамки и место обучения кадров требуют от нас анализа систем массового участия. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение новых предложений. Равным образом рамки и место обучения кадров позволяет оценить значение форм развития. Не следует, однако забывать, что начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. Задача организации, в особенности же рамки и место обучения кадров требуют от нас анализа форм развития.</string>
+    <string name="label_make_appointment">Записаться на приём</string>
+    <string name="label_making_appointment">Запись на приём</string>
+    <string name="label_order_call">Заказать звонок</string>
+    <string name="programm_f">Программа &#171;%1$s&#187;</string>
+    <string name="label_desired_date_of_appointment">Желаемая дата приема</string>
+    <string name="hint_date">ДД.ММ.ГГГГ</string>
+    <string name="label_desired_time_of_appointment">Желаемое время приема</string>
+    <string name="hint_time">ЧЧ.ММ</string>
+    <string name="label_lastname">Фамилия</string>
+    <string name="empty"/>
+    <string name="label_name">Имя</string>
+    <string name="label_middlename">Отчество</string>
+    <string name="label_email">Почта</string>
+    <string name="hint_email">example@mail.ru</string>
+    <string name="label_phone">Телефон</string>
+    <string name="hint_phone">+7 800 000 00 00</string>
+    <string name="label_notes">Примечание</string>
+    <string name="btn_send">Отправить</string>
+    <string name="ttl_check_data">Проверка данных</string>
+    <string name="label_we_contact_to_you_for_approve">Мы свяжемся с Вами в ближайшее время для подтверждения заявки на прием.</string>
+    <string name="label_we_contact_to_you">Мы свяжемся с Вами в ближайшее время.\nСпасибо.</string>
+    <string name="label_fill_field">Заполните поле &#171;%1$s&#187;</string>
+    <string name="label_contact_person">Контактное лицо</string>
+    <string name="ttl_order_call">Заказать звонок</string>
+    <string name="connection_error">Ошибка соединения!</string>
+    <string name="label_call_from_clinic">Звонок от клиники</string>
+    <string name="label_site">Сайт</string>
+
+    <string name="contact_place1">Васильевский Остров, СПб</string>
+    <string name="contact_place2">Васильевский Остров, СПб</string>
+
+    <string name="contact_address1">Галерный проезд, д. 5</string>
+    <string name="contact_address2">ул. Нахимова д. 11</string>
+
+    <string name="contact_spec1">&#8226;Хирургические услуги <i>(пластическая хирургия PARADA)</i>\n&#8226;Амбулаторная хирургия\n&#8226;Эндоскопия\n&#8226;Дерматология, косметология\n&#8226;Стационар\n&#8226;Экспресс-диагностика\n&#8226;Круглосуточная дежурная медицинская служба</string>
+    <string name="contact_spec2">&#8226;Cемейная медицина\n&#8226;Педиатрия\n&#8226;Прием специалистов\n&#8226;Диагностика\n&#8226;Лаборатория\n&#8226;Физиотерапия\n&#8226;Дневной стационар</string>
+
+    <string name="contact_work_time1">24 часа, без выходных</string>
+    <string name="contact_work_time2">с 08.00 до 21.00</string>
+
+    <string name="contact_appointment_time1">с 09.00 до 21.00</string>
+    <string name="contact_appointment_time2">с 08.00 до 21.00</string>
+
+    <string name="contact_analyzes_time1">с 09.00 до 21.00</string>
+    <string name="contact_analyzes_time2">с 08.00 до 21.00</string>
+
+    <string name="contact_phone1"> +7(812) 337 23 03; +7(812) 337 23 04</string>
+    <string name="contact_phone2">+7(812) 337 23 03; +7(812) 331 5 331</string>
+
+    <string name="url_google_maps_route">http://maps.google.com/maps?f=d&#38;daddr=%1$s, %2$s</string>
+
+    <string name="contact_site">http://baltclinicvo.ru/</string>
+    <string name="contacts_phone">tel:+78123372303</string>
+    <string name="label_not_realised">Не реализовано</string>
+    <string name="map_not_ready">Карта не готова</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Необходим доступ к определению местоположения, для построения маршрута</string>
+    <string name="label_make_route">Проложить маршрут</string>
+
+    <string name="label_time_of_work">Время работы:</string>
+    <string name="label_time_of_appointment">Приём специалистов:</string>
+    <string name="label_time_of_analyzes">Приём анализов:</string>
+    <string name="_7_812">+7 (812)</string>
+    <string name="label_price_warn">* Указанная стоимость не является публичной офертой и может отличаться от утверждённого прейскуранта. Пожалуйста, уточняйте стоимость у администратора клиники.</string>
+    <string name="label_call_us">Позвоните нам</string>
+
+</resources>

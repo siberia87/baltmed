@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        app:theme="@style/BaltMed.ToolBarStyle"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_huge">
+
+
+            <ImageView
+                android:id="@+id/fmt_service_iv_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/fmt_service_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_middle"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_middle"
+                android:textAppearance="@style/BaltMed.TextAppearance.Huge"
+                tools:text="Дерматология в Санкт-Перербурге"/>
+
+
+            <TextView
+                android:id="@+id/fmt_service_tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_small"
+                android:textAppearance="@style/BaltMed.TextAppearance.Normal"
+                tools:text="/fish"
+                />
+
+            <Button
+                android:id="@+id/fmt_service_appointment"
+                android:layout_width="@dimen/width_btn"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginTop="@dimen/padding_large"
+                android:background="@drawable/bg_btn_appointment"
+                android:text="@string/label_make_appointment"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/fmt_service_call"
+                android:layout_width="@dimen/width_btn"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginTop="@dimen/padding_large"
+                android:background="@drawable/bg_btn_call"
+                android:text="@string/label_order_call"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

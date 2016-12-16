@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/fmt_appointment_root"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        app:theme="@style/BaltMed.ToolBarStyle"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/passive">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_xlarge">
+
+            <TextView
+                style="@style/BaltMed.TextView.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_desired_date_of_appointment"
+                />
+
+            <EditText
+                android:id="@+id/fmt_appointment_et_date"
+                style="@style/BaltMed.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_xlarge"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:nextFocusDown="@+id/fmt_appointment_et_time"
+                />
+
+            <TextView
+                style="@style/BaltMed.TextView.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_desired_time_of_appointment"
+                />
+
+            <EditText
+                android:id="@+id/fmt_appointment_et_time"
+                style="@style/BaltMed.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_xlarge"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:nextFocusDown="@+id/fmt_appointment_et_lastname"
+                />
+
+            <TextView
+                style="@style/BaltMed.TextView.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_lastname"
+                />
+
+            <EditText
+                android:id="@+id/fmt_appointment_et_lastname"
+                style="@style/BaltMed.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_xlarge"
+                android:nextFocusDown="@+id/fmt_appointment_et_name"
+                />
+
+            <TextView
+                style="@style/BaltMed.TextView.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_name"
+                />
+
+            <EditText
+                android:id="@+id/fmt_appointment_et_name"
+                style="@style/BaltMed.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_xlarge"
+                android:nextFocusDown="@+id/fmt_appointment_et_middlename"
+                />
+
+            <TextView
+                style="@style/BaltMed.TextView.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_middlename"
+                />
+
+            <EditText
+                android:id="@+id/fmt_appointment_et_middlename"
+                style="@style/BaltMed.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_xlarge"
+                android:nextFocusDown="@+id/fmt_appointment_et_email"
+                />
+
+            <TextView
+                style="@style/BaltMed.TextView.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_email"
+                />
+
+            <EditText
+                android:id="@+id/fmt_appointment_et_email"
+                style="@style/BaltMed.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_xlarge"
+                android:nextFocusDown="@+id/fmt_appointment_et_phone"
+                />
+
+            <TextView
+                style="@style/BaltMed.TextView.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_phone"
+                />
+
+            <EditText
+                android:id="@+id/fmt_appointment_et_phone"
+                style="@style/BaltMed.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_xlarge"
+                android:nextFocusDown="@+id/fmt_appointment_et_notes"
+                />
+
+            <TextView
+                style="@style/BaltMed.TextView.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_notes"
+                />
+
+            <EditText
+                android:id="@+id/fmt_appointment_et_notes"
+                style="@style/BaltMed.EditText.Field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_xlarge"
+                android:imeOptions="actionDone"
+                android:nextFocusDown="@+id/fmt_appointment_btn_send"
+                />
+
+            <Button
+                android:id="@+id/fmt_appointment_btn_send"
+                style="@style/BaltMed.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_send"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

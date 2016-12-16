@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        app:theme="@style/BaltMed.ToolBarStyle"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_huge">
+
+            <ImageView
+                android:id="@+id/fmt_action_iv_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/fmt_action_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:paddingBottom="@dimen/padding_xxlarge"
+                android:paddingLeft="@dimen/padding_xlarge"
+                android:paddingRight="@dimen/padding_xlarge"
+                android:paddingTop="@dimen/padding_xxlarge"
+                android:textAppearance="@style/BaltMed.TextAppearance.Action"
+                android:textColor="@color/white"
+                android:lineSpacingExtra="@dimen/line_spacing_action"
+                tools:text="25.06-31.06\nПрограмма Здоровое сердце\n3490 руб. вместо 7 490 руб"/>
+
+
+            <TextView
+                android:id="@+id/fmt_action_tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_large"
+                android:paddingLeft="@dimen/padding_xlarge"
+                android:paddingRight="@dimen/padding_xlarge"
+                android:paddingTop="@dimen/padding_large"
+                android:textAppearance="@style/BaltMed.TextAppearance.Normal"
+                tools:text="/fish"
+                />
+
+            <Button
+                android:id="@+id/fmt_action_appointment"
+                android:layout_width="@dimen/width_btn"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginTop="@dimen/padding_xxlarge"
+                android:background="@drawable/bg_btn_appointment"
+                android:text="@string/label_make_appointment"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/fmt_action_call"
+                android:layout_width="@dimen/width_btn"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginTop="@dimen/padding_xxlarge"
+                android:background="@drawable/bg_btn_call_orange"
+                android:text="@string/label_order_call"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

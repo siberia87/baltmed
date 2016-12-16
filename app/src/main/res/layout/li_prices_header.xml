@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/item_gray"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/li_prices_header_tv_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_weight="1"
+        android:padding="@dimen/padding_middle"
+        android:text="@string/label_service"
+        android:textAllCaps="true"
+        android:textAppearance="@style/BaltMed.TextAppearance.Normal"
+        android:textColor="@color/text_gray"/>
+
+    <TextView
+        android:id="@+id/li_prices_header_tv_price"
+        android:layout_width="@dimen/width_price"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_weight="0"
+        android:padding="@dimen/padding_middle"
+        android:text="@string/label_price"
+        android:textAllCaps="true"
+        android:textAppearance="@style/BaltMed.TextAppearance.Normal"
+        android:textColor="@color/text_gray"/>
+
+</LinearLayout>

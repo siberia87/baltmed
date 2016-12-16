@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/fmt_check_call_root"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        app:theme="@style/BaltMed.ToolBarStyle"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/passive">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_xlarge">
+
+            <TextView
+                android:id="@+id/fmt_check_call_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_title_item"
+                android:clickable="false"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:text="@string/label_call_from_clinic"
+                android:textAllCaps="true"
+                android:textColor="@color/text_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fmt_check_call_tv_fio_label"
+                    style="@style/BaltMed.TextView.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_contact_person"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_call_tv_fio"
+                    style="@style/BaltMed.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_xlarge"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_call_tv_phone_label"
+                    style="@style/BaltMed.TextView.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_phone"/>
+
+                <TextView
+                    android:id="@+id/fmt_check_call_tv_phone"
+                    style="@style/BaltMed.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_xlarge"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding_xxlarge"
+                android:text="@string/label_we_contact_to_you"
+                android:textColor="@color/colorAccent"
+                />
+
+            <Button
+                android:id="@+id/fmt_check_call_btn_send"
+                style="@style/BaltMed.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_send"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

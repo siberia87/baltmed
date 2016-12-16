@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "395207414424",
+    "firebase_url": "https://baltmed-e5a8a.firebaseio.com",
+    "project_id": "baltmed-e5a8a",
+    "storage_bucket": "baltmed-e5a8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395207414424:android:ae005fb212bae3d9",
+        "android_client_info": {
+          "package_name": "ru.baltclinic.lliepmah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395207414424-mkh92b84fhvk7l4i5uasovsfcm13gsu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKHLVWw73B7KXhGPFM9UaO9aQk4_KXPM0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
